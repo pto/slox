@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		555585D623BCCEA100FB6AC3 /* Lox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555585D523BCCEA100FB6AC3 /* Lox.swift */; };
+		555585D823BCE57000FB6AC3 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555585D723BCE57000FB6AC3 /* Token.swift */; };
+		555585DA23BCE9A200FB6AC3 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555585D923BCE9A200FB6AC3 /* Scanner.swift */; };
 		55E1156923BC361100E2CD23 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E1156823BC361100E2CD23 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		555585D523BCCEA100FB6AC3 /* Lox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lox.swift; sourceTree = "<group>"; };
+		555585D723BCE57000FB6AC3 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		555585D923BCE9A200FB6AC3 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 		55E1156523BC361100E2CD23 /* slox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = slox; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E1156823BC361100E2CD23 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				55E1156823BC361100E2CD23 /* main.swift */,
+				555585D523BCCEA100FB6AC3 /* Lox.swift */,
+				555585D723BCE57000FB6AC3 /* Token.swift */,
+				555585D923BCE9A200FB6AC3 /* Scanner.swift */,
 			);
 			path = slox;
 			sourceTree = "<group>";
@@ -120,7 +129,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				555585D823BCE57000FB6AC3 /* Token.swift in Sources */,
 				55E1156923BC361100E2CD23 /* main.swift in Sources */,
+				555585DA23BCE9A200FB6AC3 /* Scanner.swift in Sources */,
+				555585D623BCCEA100FB6AC3 /* Lox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
