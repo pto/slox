@@ -40,7 +40,7 @@ class Scanner {
         "while": .WHILE
     ]
     
-    /// Creates a Lox lexical scanner.
+    /// Creates a Lox lexical scanner over the supplied source string.
     ///
     /// - Parameters:
     ///     - source: Lox source code to be scanned.
@@ -51,7 +51,7 @@ class Scanner {
         tokens = []
     }
     
-    /// Scans Lox source code and populates the `tokens` array.
+    /// Scans Lox source code and populates and returns the `tokens` array.
     ///
     /// - Returns:
     ///     Array of tokens scanned from the Lox source in `source`.
@@ -65,7 +65,7 @@ class Scanner {
         return tokens
     }
     
-    /// A Boolean value indicating whether the current scanning position is at (or beyond) the end of the source string.
+    /// A Boolean value indicating whether the current scanning position is at or beyond the end of the source string.
     var isAtEnd: Bool {
         current >= source.endIndex
     }

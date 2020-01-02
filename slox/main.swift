@@ -12,7 +12,7 @@ import Foundation
 var hadError = false
 
 /// Implements a `TextOutputStream` over standardError.
-final class StandardErrorOutputStream: TextOutputStream {
+struct StandardErrorOutputStream: TextOutputStream {
     func write(_ string: String) {
         FileHandle.standardError.write(Data(string.utf8))
     }
