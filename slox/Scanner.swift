@@ -91,7 +91,7 @@ class Scanner {
         case "/":
             if match("/") {
                 // It's a comment.
-                while (!peek().isNewline && !isAtEnd) {
+                while !peek().isNewline && !isAtEnd {
                     advance()
                 }
             } else {
@@ -208,7 +208,7 @@ class Scanner {
         addToken(type: .NUMBER, value: Double(source[start..<current]))
     }
     
-    /// Adds a keyword or IDENTIFIER token from the current position.
+    /// Adds a keyword or an IDENTIFIER token from the current position.
     func identifier() {
         while peek().isAlphaNumeric {
             advance()
